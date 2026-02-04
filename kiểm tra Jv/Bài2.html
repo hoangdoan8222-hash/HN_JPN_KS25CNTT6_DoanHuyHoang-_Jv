@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number=["100,200,300,400"];
+        console.log("Giá trị từng phần tử (for...of):");
+        for (let value of prices) {
+         console.log(value);
+        }
+        console.log("Vị trí index của từng phần tử (for...in):");
+        for (let index in prices) {
+        console.log(index);
+        }
+        let sum = 0;
+        for (let i = 0; i < prices.length; i++) {
+        if (i % 2 === 0) {
+        sum = sum + prices[i];
+        }
+    }
+        console.log("Tổng các phần tử ở vị trí index chẵn là: " + sum);
+
+    </script>
+</body>
+</html>
